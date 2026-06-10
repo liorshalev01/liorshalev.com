@@ -1,5 +1,6 @@
 ---
-slug: pages/cv
+slug: /cv
+title: Lior Shalev
 ---
 
 # Lior Shalev
