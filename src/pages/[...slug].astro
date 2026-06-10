@@ -1,11 +1,14 @@
 ---
+import type { MarkdownInstance } from "astro";
 import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const pages = Object.values(
-    import.meta.glob("../content/*.md", { eager: true }),
+    import.meta.glob<MarkdownInstance<{ slug?: string }>>("../content/*.md", {
+      eager: true,
+    }),
   );
-  return pages.map((page: any) => ({
+  return pages.map((page) => ({
     params: { slug: page.frontmatter.slug },
     props: { Content: page.Content },
   }));

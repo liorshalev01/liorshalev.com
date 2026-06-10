@@ -1,6 +1,6 @@
 # Lior Shalev
 
-<img src="assets/lior-shalev.png" alt="Lior Shalev" width="140" />
+<img src="/assets/lior-shalev.png" alt="Lior Shalev" width="140" />
 
 ## About me
 
