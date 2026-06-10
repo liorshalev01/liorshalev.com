@@ -29,4 +29,4 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 ## Contact
 
 - [linkedin.com/in/liorshalev/](https://www.linkedin.com/in/liorshalev/)
-- [github.com/liorshalev01](https://github.com/liorshalev01)
+- [liorshalev01.github.io](https://liorshalev01.github.io/)

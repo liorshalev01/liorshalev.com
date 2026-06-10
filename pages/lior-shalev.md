@@ -1,6 +1,6 @@
 # Lior Shalev
 
-[LinkedIn](https://linkedin.com/in/liorshalev) · [Personal Page](https://liorshalev01.github.io/)
+[LinkedIn](https://linkedin.com/in/liorshalev) · [Personal](https://liorshalev01.github.io/)
 
 Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision. Most recently led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent.
 
