@@ -1,6 +1,6 @@
 ---
 slug: /cv
-title: Lior Shalev
+title: CV
 ---
 
 # Lior Shalev
