@@ -1,3 +1,3 @@
 # Personal GitHub Page
 
-[liorshalev01.github.io](https://liorshalev01.github.io/)
+Personal website [liorshalev.com](https://liorshalev.com/)
