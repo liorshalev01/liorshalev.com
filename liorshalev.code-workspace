@@ -1,0 +1,38 @@
+{
+  "folders": [
+    {
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit",
+    },
+    "files.watcherExclude": {
+      "_site": true,
+      ".jekyll-cache": true,
+      "vendor": true,
+    },
+    "[javascript][typescript][typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[html][css]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[json][jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[astro]": {
+      "editor.defaultFormatter": "astro-build.astro-vscode",
+    },
+  },
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "astro-build.astro-vscode",
+    ],
+  },
+}
