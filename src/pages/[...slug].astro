@@ -15,7 +15,10 @@ export async function getStaticPaths() {
     }
     return {
       params: { slug: page.frontmatter.slug },
-      props: { Content: page.Content, title: page.frontmatter.title },
+      props: {
+        Content: page.Content,
+        title: `Lior Shalev - ${page.frontmatter.title}`,
+      },
     };
   });
 }
