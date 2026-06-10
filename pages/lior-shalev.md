@@ -1,6 +1,9 @@
 # Lior Shalev
 
-[LinkedIn](https://linkedin.com/in/liorshalev) · [Personal](https://liorshalev01.github.io/)
+Personal website: [liorshalev.com](https://liorshalev.com/)<br>
+LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)
+
+## About me
 
 Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision. Most recently led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent.
 
@@ -82,8 +85,8 @@ Reading the books I'd never had time to read.
 
 ## Earlier
 
-- **2013–2015: HealthWatch, Software Development Lead.** 15-lead ECG remote monitoring and medical diagnostic product. Led hardware/firmware integration, mobile apps, and cloud backend. *C/C++, iOS, Android, AWS.*
-- **2008–2012: Independent Consultant (US), E-commerce and Online Trading.** Built large-scale trading and e-commerce services handling thousands of concurrent requests per minute. *C#, .NET, AWS.*
-- **2004–2008: Celtro, Cellular Backhaul Systems.** Infrastructure software, IP networking for cellular data transport, real-time DB mirroring. *Linux kernel, C/C++.*
-- **2002–2004: Terayon, VoIP Modem / CMTS.** IP security and routing protocols (RSA, SSL, Kerberos). *Linux kernel, C/C++.*
-- **2000–2002: Vigilant Technology, Video Surveillance.** MPEG4 storage on RAID with real-time face-recognition pipeline. *C/C++, Win32.*
+- **2013–2015: HealthWatch, Software Development Lead.** 15-lead ECG remote monitoring and medical diagnostic product. Led hardware/firmware integration, mobile apps, and cloud backend. _C/C++, iOS, Android, AWS._
+- **2008–2012: Independent Consultant (US), E-commerce and Online Trading.** Built large-scale trading and e-commerce services handling thousands of concurrent requests per minute. _C#, .NET, AWS._
+- **2004–2008: Celtro, Cellular Backhaul Systems.** Infrastructure software, IP networking for cellular data transport, real-time DB mirroring. _Linux kernel, C/C++._
+- **2002–2004: Terayon, VoIP Modem / CMTS.** IP security and routing protocols (RSA, SSL, Kerberos). _Linux kernel, C/C++._
+- **2000–2002: Vigilant Technology, Video Surveillance.** MPEG4 storage on RAID with real-time face-recognition pipeline. _C/C++, Win32._
