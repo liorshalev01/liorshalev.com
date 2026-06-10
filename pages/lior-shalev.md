@@ -1,8 +1,8 @@
 # Lior Shalev
 
-[Personal Page](https://liorshalev.notion.site/) · [LinkedIn](https://linkedin.com/in/liorshalev) · [GitHub](https://github.com/liorshalev01)
+[LinkedIn](https://linkedin.com/in/liorshalev) · [Personal Page](https://liorshalev01.github.io/)
 
-Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, medical monitoring, and real-time computer vision. Most recently led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent.
+Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision. Most recently led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent.
 
 Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
 
