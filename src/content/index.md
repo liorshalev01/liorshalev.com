@@ -1,6 +1,6 @@
 # Lior Shalev
 
-<img src="assets/lior-shalev.png" alt="Lior Shalev" width="160" />
+<img src="assets/lior-shalev.png" alt="Lior Shalev" width="140" />
 
 ## About me
 
@@ -24,7 +24,7 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 ## Read more
 
-- [My CV](/pages/lior-shalev)
+- [My CV](/pages/cv)
 
 ## Contact
 
