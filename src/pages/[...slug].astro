@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const pages = Object.values(
-    import.meta.glob("../content/*.md", { eager: true })
+    import.meta.glob("../content/*.md", { eager: true }),
   );
   return pages.map((page: any) => ({
     params: { slug: page.frontmatter.slug },
@@ -15,5 +15,5 @@ const { Content } = Astro.props;
 ---
 
 <Layout>
-  <article class="prose mx-auto p-8"><Content /></article>
+  <article class="prose mx-auto p-4"><Content /></article>
 </Layout>

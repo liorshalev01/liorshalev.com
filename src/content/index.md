@@ -24,7 +24,7 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 ## Read more
 
-- [My CV](/pages/cv)
+- [CV](/pages/cv)
 
 ## Contact
 
