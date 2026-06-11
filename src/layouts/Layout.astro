@@ -15,11 +15,11 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Lior Shalev",
-  jobTitle: "Software Architect & Systems Engineer",
+  jobTitle: "Software architect and hands-on systems engineer",
   url: "https://liorshalev.com/",
   image: ogImage,
   sameAs: [
-    "https://www.linkedin.com/in/liorshalev/",
+    "https://linkedin.com/in/liorshalev/",
     "https://github.com/liorshalev01/",
   ],
 };
@@ -40,7 +40,11 @@ const personSchema = {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lior Shalev" />
+    <meta property="og:locale" content="en_US" />
     <meta property="og:image" content={ogImage} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:alt" content="Lior Shalev" />
     <meta name="twitter:card" content="summary" />
     {
       isHome && (

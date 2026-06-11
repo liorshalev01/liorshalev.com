@@ -1,6 +1,6 @@
 ---
-title: Lior Shalev — Software Architect & Systems Engineer
-description: Software architect and hands-on systems engineer building products where failure is expensive — endpoint security, secure browsers, counter-drone defense, and real-time computer vision.
+title: Lior Shalev
+description: Software architect and hands-on systems engineer.
 ---
 
 # Lior Shalev
