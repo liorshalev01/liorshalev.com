@@ -21,7 +21,7 @@ There are no test or lint scripts. On this machine npm is not on the default non
 All pages are markdown files in `src/content/`, rendered by a single generic wrapper:
 
 - `src/content/*.md` — one file per page. Each file's URL comes from its `slug` frontmatter (e.g. `slug: /cv` → `/cv`); a file with no slug becomes the homepage `/`. A `title` frontmatter is required and sets the page's `<title>` (the build fails without it). To add a page, drop a `.md` here with a `slug` and `title` — no other file needs touching.
-- `src/pages/[...slug].astro` — the only route. Its `getStaticPaths()` globs `src/content/*.md` and renders each as `<Layout><article class="prose mx-auto px-4 py-16"><Content /></article></Layout>`.
+- `src/pages/[...slug].astro` — the only route. Its `getStaticPaths()` globs `src/content/*.md` and renders each as `<Layout><article class="prose mx-auto px-8 py-16"><Content /></article></Layout>`.
 
 Do not place `.md` files directly in `src/pages/` — Astro auto-routes them as bare pages without the Layout or typography styles.
 
