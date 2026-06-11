@@ -4,29 +4,36 @@ import Layout from "../layouts/Layout.astro";
 
 export async function getStaticPaths() {
   const pages = Object.values(
-    import.meta.glob<MarkdownInstance<{ slug?: string; title: string }>>(
-      "../content/*.md",
-      { eager: true },
-    ),
+    import.meta.glob<
+      MarkdownInstance<{ slug?: string; title: string; description: string }>
+    >("../content/*.md", { eager: true }),
   );
   return pages.map((page) => {
     if (!page.frontmatter.title) {
       throw new Error(`Missing title frontmatter in ${page.file}`);
     }
+    if (!page.frontmatter.description) {
+      throw new Error(`Missing description frontmatter in ${page.file}`);
+    }
+    const isHome = page.frontmatter.slug === undefined;
     return {
       params: { slug: page.frontmatter.slug },
       props: {
         Content: page.Content,
-        title: `Lior Shalev - ${page.frontmatter.title}`,
+        title: isHome
+          ? page.frontmatter.title
+          : `Lior Shalev - ${page.frontmatter.title}`,
+        description: page.frontmatter.description,
+        isHome,
       },
     };
   });
 }
 
-const { Content, title } = Astro.props;
+const { Content, title, description, isHome } = Astro.props;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={description} isHome={isHome}>
   <article class="prose mx-auto px-8 py-16">
     <Content />
   </article>

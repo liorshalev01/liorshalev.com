@@ -1,5 +1,6 @@
 ---
-title: Home
+title: Lior Shalev — Software Architect & Systems Engineer
+description: Software architect and hands-on systems engineer building products where failure is expensive — endpoint security, secure browsers, counter-drone defense, and real-time computer vision.
 ---
 
 # Lior Shalev
@@ -32,5 +33,4 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 ## Read more
 
 [My CV](/cv)<br>
-[LinkedIn profile](https://www.linkedin.com/in/liorshalev/)<br>
-[personal website](https://liorshalev.com/)
+[LinkedIn profile](https://www.linkedin.com/in/liorshalev/)

@@ -3,9 +3,30 @@ import "../styles/global.css";
 
 interface Props {
   title: string;
+  description: string;
+  isHome?: boolean;
 }
 
-const { title } = Astro.props;
+const { title, description, isHome = false } = Astro.props;
+
+const path = Astro.url.pathname.endsWith("/")
+  ? Astro.url.pathname
+  : Astro.url.pathname + "/";
+const canonical = new URL(path, Astro.site).href;
+const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Lior Shalev",
+  jobTitle: "Software Architect & Systems Engineer",
+  url: "https://liorshalev.com/",
+  image: ogImage,
+  sameAs: [
+    "https://www.linkedin.com/in/liorshalev/",
+    "https://github.com/liorshalev01",
+  ],
+};
 ---
 
 <!doctype html>
@@ -16,6 +37,24 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+    {
+      isHome && (
+        <script
+          type="application/ld+json"
+          is:inline
+          set:html={JSON.stringify(personSchema)}
+        />
+      )
+    }
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXD76GCV19"
     ></script>
