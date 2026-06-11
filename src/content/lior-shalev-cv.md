@@ -7,8 +7,8 @@ description: CV of Lior Shalev, software architect and systems engineer — endp
 # Lior Shalev
 
 Personal website: [liorshalev.com](https://liorshalev.com/)<br>
-GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01)<br>
-LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)
+GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01/)<br>
+LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev/)
 
 ## About me
 
