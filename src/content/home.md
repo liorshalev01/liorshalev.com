@@ -32,5 +32,6 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 ## Read more
 
-[My CV](/cv)<br>
-[LinkedIn profile](https://www.linkedin.com/in/liorshalev/)
+[Lior Shalev - CV](/cv/)<br>
+[LinkedIn](https://www.linkedin.com/in/liorshalev/)<br>
+[GitHub](https://github.com/liorshalev01)
