@@ -20,11 +20,11 @@ There are no test or lint scripts. On this machine npm is not on the default non
 
 All pages are markdown files in `src/content/`, rendered by a single generic wrapper:
 
-- `src/content/*.md` — one file per page. Each file's URL comes from its `slug` frontmatter (e.g. `slug: /cv` → `/cv`); a file with no slug becomes the homepage `/`. A `title` frontmatter is required and sets the page's `<title>` (the build fails without it). To add a page, drop a `.md` here with a `slug` and `title` — no other file needs touching.
+- `src/content/*.md` — one file per page. Each file's URL comes from its `slug` frontmatter (e.g. `slug: /cv` → `/cv`); a file with no slug becomes the homepage `/`. `title` and `description` frontmatter are required — they set the page's `<title>`, meta description, and Open Graph tags (the build fails without them). To add a page, drop a `.md` here with a `slug`, `title`, and `description` — no other file needs touching.
 - `src/pages/[...slug].astro` — the only route. Its `getStaticPaths()` globs `src/content/*.md` and renders each as `<Layout><article class="prose mx-auto px-8 py-16"><Content /></article></Layout>`.
 
 Do not place `.md` files directly in `src/pages/` — Astro auto-routes them as bare pages without the Layout or typography styles.
 
-`src/layouts/Layout.astro` is the single HTML shell (head, favicon, Google Analytics tag). Tailwind 4 is configured entirely in CSS — `src/styles/global.css` does `@import "tailwindcss"` and loads the `@tailwindcss/typography` plugin; there is no tailwind.config.js. Markdown body styling comes from the `prose` class in the wrapper, not from element styles.
+`src/layouts/Layout.astro` is the single HTML shell (head, favicon, SEO meta/canonical/Open Graph tags, JSON-LD Person schema on the homepage, Google Analytics tag). The `@astrojs/sitemap` integration generates `sitemap-index.xml` at build time, referenced by `public/robots.txt`. Tailwind 4 is configured entirely in CSS — `src/styles/global.css` does `@import "tailwindcss"` and loads the `@tailwindcss/typography` plugin; there is no tailwind.config.js. Markdown body styling comes from the `prose` class in the wrapper, not from element styles.
 
 Internal markdown links must use extensionless route paths (e.g. `/cv`), not file paths (`lior-shalev-cv.md`). Images referenced from markdown live in `public/assets/` and are sized to ~2x their rendered width.
