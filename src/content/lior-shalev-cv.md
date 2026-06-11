@@ -42,7 +42,7 @@ Conceived and led a hardware-enforced endpoint-security system from concept to w
 
 We decided to close the venture because we assessed the commercial opportunity as too narrow to justify continued full-time investment.
 
-**See the project page on GitHub:** [https://github.com/liorshalev01/secure-endpoint](https://github.com/liorshalev01/secure-endpoint)
+**See the project page on GitHub:** [https://github.com/liorshalev01/secure-endpoint](https://github.com/liorshalev01/secure-endpoint/)
 
 ## Jan 2025 – Present: Software engineering consultant
 
