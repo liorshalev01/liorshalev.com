@@ -13,6 +13,8 @@ Software architect and hands-on systems engineer building products where failure
 
 Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
 
+> [Lior Shalev - CV](/cv/)
+
 ## Highlights
 
 - **Security startup, founding team (2025).** Principal architect. Designed and built a system where even a fully compromised computer cannot read the user's screen or keyboard: display and input run on separate trusted hardware, and the computer in between carries only encrypted data. Delivered a working prototype and a provisional patent on the key-exchange protocol.
@@ -32,6 +34,5 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 ## Read more
 
-[Lior Shalev - CV](/cv/)<br>
 [LinkedIn](https://www.linkedin.com/in/liorshalev/)<br>
 [GitHub](https://github.com/liorshalev01)
