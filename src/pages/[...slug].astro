@@ -19,11 +19,9 @@ export async function getStaticPaths() {
     return {
       params: { slug: page.frontmatter.slug },
       props: {
-        Content: page.Content,
-        title: isHome
-          ? page.frontmatter.title
-          : `Lior Shalev - ${page.frontmatter.title}`,
+        title: page.frontmatter.title,
         description: page.frontmatter.description,
+        Content: page.Content,
         isHome,
       },
     };

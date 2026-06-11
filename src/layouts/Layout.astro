@@ -8,11 +8,7 @@ interface Props {
 }
 
 const { title, description, isHome = false } = Astro.props;
-
-const path = Astro.url.pathname.endsWith("/")
-  ? Astro.url.pathname
-  : Astro.url.pathname + "/";
-const canonical = new URL(path, Astro.site).href;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
 
 const personSchema = {
