@@ -13,7 +13,7 @@ Software architect and hands-on systems engineer building products where failure
 
 Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
 
-> [Lior Shalev - CV](/cv/)
+[**Read my full CV →**](/cv/)
 
 ## Highlights
 
