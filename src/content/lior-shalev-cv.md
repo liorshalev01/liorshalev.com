@@ -1,7 +1,7 @@
 ---
 slug: /cv
 title: CV
-description: CV of Lior Shalev, software architect and systems engineer — endpoint security, Chromium internals, counter-drone systems, embedded Linux, and real-time computer vision.
+description: CV of Lior Shalev, software architect and systems engineer — endpoint security, Chromium internals, counter-drone defense, and real-time computer vision.
 ---
 
 # Lior Shalev

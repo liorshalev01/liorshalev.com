@@ -22,7 +22,7 @@ export async function getStaticPaths() {
         Content: page.Content,
         title: isHome
           ? page.frontmatter.title
-          : `Lior Shalev - ${page.frontmatter.title}`,
+          : `${page.frontmatter.title} — Lior Shalev | Software Architect & Systems Engineer`,
         description: page.frontmatter.description,
         isHome,
       },
