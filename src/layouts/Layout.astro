@@ -8,7 +8,8 @@ interface Props {
 }
 
 const { title, description, isHome = false } = Astro.props;
-const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const pathname = Astro.url.pathname.replace(/\/$/, "");
+const canonical = new URL(pathname || "/", Astro.site).href;
 const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
 
 const personSchema = {
@@ -16,11 +17,11 @@ const personSchema = {
   "@type": "Person",
   name: "Lior Shalev",
   jobTitle: "Software architect and hands-on systems engineer",
-  url: "https://liorshalev.com/",
+  url: "https://liorshalev.com",
   image: ogImage,
   sameAs: [
-    "https://linkedin.com/in/liorshalev/",
-    "https://github.com/liorshalev01/",
+    "https://linkedin.com/in/liorshalev",
+    "https://github.com/liorshalev01",
   ],
 };
 ---
