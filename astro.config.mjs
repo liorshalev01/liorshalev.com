@@ -9,6 +9,7 @@ import rehypeExternalLinks from "rehype-external-links";
 export default defineConfig({
   site: "https://liorshalev.com",
   trailingSlash: "never",
+  build: { format: "file" },
   integrations: [sitemap()],
   markdown: {
     processor: unified({
