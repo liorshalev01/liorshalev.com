@@ -19,7 +19,7 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 - **Security startup, founding team (2025).** Principal architect. Designed and built a system where even a fully compromised computer cannot read the user's screen or keyboard: display and input run on separate trusted hardware, and the computer in between carries only encrypted data. Delivered a working prototype and a provisional patent on the key-exchange protocol.
 
-  **See the project page on GitHub:** [https://github.com/liorshalev01/secure-endpoint](https://github.com/liorshalev01/secure-endpoint/)
+  [**Read the project GitHub page→**](https://github.com/liorshalev01/secure-endpoint)
 
 - **Talon Cyber Security (2023–2024).** Built data-loss-prevention and security-hardening features inside Talon's Chromium-based enterprise browser. Acquired by Palo Alto Networks for $625M.
 - **D-Fend Solutions (2019–2022).** Software architect and team lead for the Wi-Fi counter-drone system, deployed by defense and critical-infrastructure customers worldwide. Acquired by Motorola Solutions for $1.5B.
@@ -34,6 +34,6 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 ## Read more
 
-Personal website: [liorshalev.com](https://liorshalev.com/)<br>
-GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01/)<br>
-LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev/)
+Personal website: [liorshalev.com](https://liorshalev.com)<br>
+GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01)<br>
+LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)

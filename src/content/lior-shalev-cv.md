@@ -6,9 +6,9 @@ description: Software architect and hands-on systems engineer.
 
 # Lior Shalev
 
-Personal website: [liorshalev.com](https://liorshalev.com/)<br>
-GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01/)<br>
-LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev/)
+Personal website: [liorshalev.com](https://liorshalev.com)<br>
+GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01)<br>
+LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)
 
 ## About me
 
@@ -29,6 +29,8 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 Conceived and led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent. The architecture isolates display and input in dedicated trusted hardware, so a compromised host relays only opaque ciphertext and never holds plaintext or keys, defeating key-loggers, screen-scraping, and man-in-the-browser attacks by design, not policy.
 
+[**Project GitHub page→**](https://github.com/liorshalev01/secure-endpoint)<br>https://github.com/liorshalev01/secure-endpoint
+
 #### Design & IP
 
 - **Synchronized ACK.** A three-party authenticated key-exchange protocol that lets physically isolated, unidirectional input and output devices converge on a single session key, solving the state-synchronization problem that arises when the two devices cannot communicate directly. Provisional patent.
@@ -41,8 +43,6 @@ Conceived and led a hardware-enforced endpoint-security system from concept to w
 - Browser relay and cloud gateway: an untrusted React browser endpoint and a proxy handling secure-message crypto and content rendering.
 
 We decided to close the venture because we assessed the commercial opportunity as too narrow to justify continued full-time investment.
-
-**See the project page on GitHub:** [https://github.com/liorshalev01/secure-endpoint](https://github.com/liorshalev01/secure-endpoint/)
 
 ## Jan 2025 – Present: Software engineering consultant
 
