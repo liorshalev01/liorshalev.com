@@ -29,7 +29,7 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 Conceived and led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent. The architecture isolates display and input in dedicated trusted hardware, so a compromised host relays only opaque ciphertext and never holds plaintext or keys, defeating key-loggers, screen-scraping, and man-in-the-browser attacks by design, not policy.
 
-[**Project GitHub page→**](https://github.com/liorshalev01/secure-endpoint)<br>https://github.com/liorshalev01/secure-endpoint
+**Project GitHub page →** https://github.com/liorshalev01/secure-endpoint
 
 #### Design & IP
 
