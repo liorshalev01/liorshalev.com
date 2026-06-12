@@ -8,7 +8,6 @@ import rehypeExternalLinks from "rehype-external-links";
 // https://astro.build/config
 export default defineConfig({
   site: "https://liorshalev.com",
-  trailingSlash: "always",
   integrations: [sitemap()],
   markdown: {
     processor: unified({
