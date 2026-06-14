@@ -19,7 +19,7 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 ## Technical strengths
 
 - **Security engineering:** Endpoint security, Chromium/browser internals, DLP, RF/Wi-Fi cyber systems, applied cryptography and PKI, and security architecture for high-assurance products.
-- **Systems & low-level engineering:** Linux kernel/BSP, Xilinx/FPGA platforms, driver development, embedded Linux, and performance-critical C/C++/Rust.
+- **Systems & low-level engineering:** Linux kernel/BSP, Xilinx/FPGA platforms, driver development, embedded Linux, and performance-critical C, C++20, and Rust.
 - **Computer vision, AR, and real-time media:** OpenCV, TensorFlow, ARKit, WebRTC, and real-time object tracking on live video.
 - **Cross-platform product delivery:** Production software across Windows, macOS, Linux, iOS, and Android; TypeScript/React, Python, Go, and AWS. Strong test, release, and DevOps ownership.
 
@@ -92,8 +92,8 @@ Reading the books I'd never had time to read.
 
 ## Earlier
 
-- **2013–2015: HealthWatch, Software Development Lead.** 15-lead ECG remote monitoring and medical diagnostic product. Led hardware/firmware integration, mobile apps, and cloud backend. _C/C++, iOS, Android, AWS._
+- **2013–2015: HealthWatch, Software Development Lead.** 15-lead ECG remote monitoring and medical diagnostic product. Led hardware/firmware integration, mobile apps, and cloud backend. _C & C++, iOS, Android, AWS._
 - **2008–2012: Independent Consultant (US), E-commerce and Online Trading.** Built large-scale trading and e-commerce services handling thousands of concurrent requests per minute. _C#, .NET, AWS._
-- **2004–2008: Celtro, Cellular Backhaul Systems.** Infrastructure software, IP networking for cellular data transport, real-time DB mirroring. _Linux kernel, C/C++._
-- **2002–2004: Terayon, VoIP Modem / CMTS.** IP security and routing protocols (RSA, SSL, Kerberos). _Linux kernel, C/C++._
-- **2000–2002: Vigilant Technology, Video Surveillance.** MPEG4 storage on RAID with real-time face-recognition pipeline. _C/C++, Win32._
+- **2004–2008: Celtro, Cellular Backhaul Systems.** Infrastructure software, IP networking for cellular data transport, real-time DB mirroring. _Linux kernel, C & C++._
+- **2002–2004: Terayon, VoIP Modem / CMTS.** IP security and routing protocols (RSA, SSL, Kerberos). _Linux kernel, C & C++._
+- **2000–2002: Vigilant Technology, Video Surveillance.** MPEG4 storage on RAID with real-time face-recognition pipeline. _C & C++, Win32._
