@@ -35,6 +35,7 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 ## Conventions
 - Changes land via PRs to `main` (CODEOWNERS auto-requests review); deploy is automatic on merge.
 - Keep commit messages short and action-oriented.
+- Import from `src/` via the `@/*` alias (e.g. `@/lib/blog`), not relative `../` paths.
 
 ## Constraints
 - Static site only — no backend, database, auth, or client-side framework. Keep it simple.
