@@ -31,9 +31,3 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 - **Systems & low-level engineering:** Linux kernel/BSP, Xilinx/FPGA platforms, driver development, embedded Linux, and performance-critical C, C++20, and Rust.
 - **Computer vision, AR, and real-time media:** OpenCV, TensorFlow, ARKit, WebRTC, and real-time object tracking on live video.
 - **Cross-platform product delivery:** Production software across Windows, macOS, Linux, iOS, and Android; TypeScript/React, Python, Go, and AWS. Strong test, release, and DevOps ownership.
-
-## Read more
-
-Personal website: [liorshalev.com](https://liorshalev.com)<br>
-GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01)<br>
-LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)
