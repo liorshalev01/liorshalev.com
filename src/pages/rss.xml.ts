@@ -5,7 +5,7 @@ import type { APIContext } from "astro";
 export async function GET(context: APIContext) {
   const posts = await getPosts();
   return rss({
-    title: "Lior Shalev — Blog",
+    title: "Lior Shalev - Blog",
     description:
       "Notes on security engineering, low-level systems, and building things that have to keep working.",
     site: context.site!,
