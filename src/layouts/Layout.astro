@@ -12,6 +12,19 @@ const cleanPath = Astro.url.pathname.replace(/(?:index)?\.html$/, "");
 const canonical = new URL(cleanPath, Astro.site).href;
 const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
 
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/liorshalev",
+    icon: "/assets/linkedin.png",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/liorshalev01",
+    icon: "/assets/github.png",
+  },
+];
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -19,10 +32,7 @@ const personSchema = {
   jobTitle: "Software architect and hands-on systems engineer",
   url: "https://liorshalev.com",
   image: ogImage,
-  sameAs: [
-    "https://linkedin.com/in/liorshalev",
-    "https://github.com/liorshalev01",
-  ],
+  sameAs: socialLinks.map((link) => link.href),
 };
 ---
 
@@ -83,32 +93,19 @@ const personSchema = {
     </main>
     <footer>
       <div class="flex items-center gap-4">
-        <a
-          href="https://linkedin.com/in/liorshalev"
-          aria-label="LinkedIn"
-          title="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/assets/linkedin.png"
-            alt="LinkedIn"
-            style="height:24px;width:auto"
-          />
-        </a>
-        <a
-          href="https://github.com/liorshalev01"
-          aria-label="GitHub"
-          title="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            src="/assets/github.png"
-            alt="GitHub"
-            style="height:24px;width:auto"
-          />
-        </a>
+        {
+          socialLinks.map((link) => (
+            <a
+              href={link.href}
+              aria-label={link.label}
+              title={link.label}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={link.icon} alt={link.label} class="h-6 w-auto" />
+            </a>
+          ))
+        }
       </div>
     </footer>
   </body>
