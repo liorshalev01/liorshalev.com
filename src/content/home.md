@@ -5,7 +5,7 @@ description: Software architect and hands-on systems engineer.
 
 # Lior Shalev
 
-<img src="/assets/lior-shalev.png" alt="Lior Shalev" width="140" />
+<img src="/assets/lior-shalev.png" alt="Lior Shalev" width="120" />
 
 ## About me
 
@@ -13,7 +13,7 @@ Software architect and hands-on systems engineer building products where failure
 
 Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
 
-[**Read my full CV →**](/cv)
+[**Read my CV →**](/cv)
 
 ## Highlights
 

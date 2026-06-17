@@ -70,7 +70,7 @@ const personSchema = {
       gtag("config", "G-9TSHXEV0C3");
     </script>
   </head>
-  <body class="flex flex-col min-h-screen prose mx-auto px-8 py-8 gap-8">
+  <body class="flex flex-col min-h-screen max-w-prose mx-auto px-8 py-8 gap-8">
     <header>
       <nav class="flex flex-row gap-6 text-sm font-medium">
         <a href="/" class="no-underline hover:underline">Home</a>
@@ -78,7 +78,7 @@ const personSchema = {
         <a href="/blog" class="no-underline hover:underline">Blog</a>
       </nav>
     </header>
-    <main class="grow">
+    <main class="prose grow">
       <slot />
     </main>
     <footer>
