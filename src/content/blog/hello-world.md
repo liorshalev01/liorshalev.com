@@ -1,7 +1,7 @@
 ---
 title: Hello, world
 description: A first post — what this blog is about.
-publishDate: 2026-06-17
+pubDate: 2026-06-17
 ---
 
 This is the first post on my blog. I plan to write here about the things I work
