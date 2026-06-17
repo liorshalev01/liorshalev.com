@@ -17,27 +17,25 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
   title="Blog — Lior Shalev"
   description="Notes on security engineering, low-level systems, and building things that have to keep working."
 >
-  <article class="prose mx-auto px-8 py-8">
-    <h1>Blog</h1>
-    <ul class="not-prose space-y-8">
-      {
-        posts.map((post) => (
-          <li>
-            <a
-              href={`/blog/${post.id}`}
-              class="text-xl font-semibold no-underline hover:underline"
-            >
-              {post.data.title}
-            </a>
-            <p class="text-sm text-gray-500">
-              <time datetime={post.data.publishDate.toISOString()}>
-                {dateFormat.format(post.data.publishDate)}
-              </time>
-            </p>
-            <p class="text-gray-700">{post.data.description}</p>
-          </li>
-        ))
-      }
-    </ul>
-  </article>
+  <h1>Blog</h1>
+  <ul class="not-prose space-y-8">
+    {
+      posts.map((post) => (
+        <li>
+          <a
+            href={`/blog/${post.id}`}
+            class="text-xl font-semibold no-underline hover:underline"
+          >
+            {post.data.title}
+          </a>
+          <p class="text-sm text-gray-500">
+            <time datetime={post.data.publishDate.toISOString()}>
+              {dateFormat.format(post.data.publishDate)}
+            </time>
+          </p>
+          <p class="text-gray-700">{post.data.description}</p>
+        </li>
+      ))
+    }
+  </ul>
 </Layout>

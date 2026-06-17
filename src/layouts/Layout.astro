@@ -70,9 +70,9 @@ const personSchema = {
       gtag("config", "G-9TSHXEV0C3");
     </script>
   </head>
-  <body class="flex min-h-screen flex-col">
-    <header class="prose mx-auto w-full px-8 pt-8">
-      <nav class="flex gap-6 text-sm font-medium">
+  <body class="flex flex-col min-h-screen prose mx-auto px-8 py-8 gap-8">
+    <header>
+      <nav class="flex flex-row gap-6 text-sm font-medium">
         <a href="/" class="no-underline hover:underline">Home</a>
         <a href="/cv" class="no-underline hover:underline">CV</a>
         <a href="/blog" class="no-underline hover:underline">Blog</a>
@@ -81,8 +81,8 @@ const personSchema = {
     <main class="grow">
       <slot />
     </main>
-    <footer class="prose mx-auto w-full px-8 py-8 text-sm text-gray-500">
-      <div class="not-prose flex items-center gap-4">
+    <footer>
+      <div class="flex items-center gap-4">
         <a
           href="https://linkedin.com/in/liorshalev"
           aria-label="LinkedIn"
@@ -90,7 +90,11 @@ const personSchema = {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/linkedin.png" alt="LinkedIn" style="height:24px;width:auto" />
+          <img
+            src="/assets/linkedin.png"
+            alt="LinkedIn"
+            style="height:24px;width:auto"
+          />
         </a>
         <a
           href="https://github.com/liorshalev01"
@@ -99,7 +103,11 @@ const personSchema = {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="/assets/github.png" alt="GitHub" style="height:24px;width:auto" />
+          <img
+            src="/assets/github.png"
+            alt="GitHub"
+            style="height:24px;width:auto"
+          />
         </a>
       </div>
     </footer>

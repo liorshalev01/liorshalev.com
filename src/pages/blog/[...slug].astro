@@ -18,10 +18,8 @@ const formattedDate = new Intl.DateTimeFormat("en-US", {
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <article class="prose mx-auto px-8 py-8">
-    <p class="text-sm text-gray-500">
-      <time datetime={post.data.publishDate.toISOString()}>{formattedDate}</time>
-    </p>
-    <Content />
-  </article>
+  <p class="text-sm text-gray-500">
+    <time datetime={post.data.publishDate.toISOString()}>{formattedDate}</time>
+  </p>
+  <Content />
 </Layout>
