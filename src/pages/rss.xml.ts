@@ -1,6 +1,6 @@
+import { getPosts } from "@/lib/blog";
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
-import { getPosts } from "@/lib/blog";
 
 export async function GET(context: APIContext) {
   const posts = await getPosts();
@@ -9,6 +9,7 @@ export async function GET(context: APIContext) {
     description:
       "Notes on security engineering, low-level systems, and building things that have to keep working.",
     site: context.site!,
+    trailingSlash: false,
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
