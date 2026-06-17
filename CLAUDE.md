@@ -7,7 +7,7 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 ## Tech Stack
 
 - Framework: Astro (static site generation)
-- Styling: Tailwind CSS v4 + `@tailwindcss/typography` (`prose`)
+- Styling: Tailwind CSS v4 (utilities) + `@tailwindcss/typography` (`prose`). No custom CSS beyond the two imports in `src/styles/global.css`. The page layout (two-column sidebar) is built with Tailwind utility classes in `Layout.astro`. Default (system) fonts; no CSS animations.
 - Content: Markdown with YAML frontmatter
 - Hosting: GitHub Pages (custom domain via `public/CNAME`)
 
@@ -20,7 +20,8 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 - `src/lib/blog.ts`: `getPosts()` — all posts sorted newest-first by `publishDate`. Used by both blog pages.
 - `src/pages/blog/index.astro`: Blog listing (`/blog`), posts sorted newest-first.
 - `src/pages/blog/[...slug].astro`: Individual post pages (`/blog/<slug>`), where `<slug>` is the post filename.
-- `src/layouts/Layout.astro`: Shared HTML shell — nav header (Home/CV/Blog), `<head>` meta/OG/canonical tags, Person JSON-LD (homepage only), Google Analytics.
+- `src/pages/rss.xml.ts`: RSS feed at `/rss.xml`, built from `getPosts()`. Linked from `<head>` and the footer.
+- `src/layouts/Layout.astro`: Shared HTML shell — two-column layout (sticky left sidebar with avatar/name/role + `public/assets/*.png` social icons + top nav Home/CV/Blog + `<main class="prose">` + footer), `<head>` meta/OG/canonical tags, Person JSON-LD (homepage only), Google Analytics. Built with Tailwind utility classes.
 - `astro.config.mjs`: Site URL, `trailingSlash: "never"`, `build.format: "file"` (clean extensionless URLs), sitemap, external-link rehype plugin.
 - `public/`: Static assets served as-is (`CNAME`, `favicon.svg`, `robots.txt`, `assets/`).
 - `.github/workflows/deploy.yaml`: Builds and deploys to GitHub Pages on push to `main`.
@@ -28,7 +29,7 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 ## Adding / Editing Pages
 
 - To add a page, create a new `src/content/<name>.md` with `title` and `description` frontmatter (both required — the build throws without them). Add a `slug` for a non-home path; omit it for the homepage.
-- Content is rendered inside `<main class="prose">` (in `Layout.astro`), so standard markdown styles automatically.
+- Content is rendered inside `<main class="prose">` (in `Layout.astro`), so standard markdown styles automatically. The name/role already live in the sidebar — don't repeat a top-level name H1 in `home.md`.
 - To add a blog post, create `src/content/blog/<slug>.md` with `title`, `description`, and `publishDate` frontmatter. It appears at `/blog/<slug>` and in the `/blog` listing automatically. The visible post title is rendered from frontmatter `title` — don't add a body H1.
 
 ## Commands

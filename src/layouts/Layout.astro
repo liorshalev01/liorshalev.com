@@ -12,6 +12,14 @@ const cleanPath = Astro.url.pathname.replace(/(?:index)?\.html$/, "");
 const canonical = new URL(cleanPath, Astro.site).href;
 const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
 
+const jobTitle = "Software architect and hands-on systems engineer";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/cv", label: "CV" },
+  { href: "/blog", label: "Blog" },
+];
+
 const socialLinks = [
   {
     label: "LinkedIn",
@@ -29,11 +37,13 @@ const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Lior Shalev",
-  jobTitle: "Software architect and hands-on systems engineer",
+  jobTitle: jobTitle,
   url: "https://liorshalev.com",
   image: ogImage,
   sameAs: socialLinks.map((link) => link.href),
 };
+
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -47,6 +57,12 @@ const personSchema = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Lior Shalev — Blog"
+      href="/rss.xml"
+    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -80,33 +96,89 @@ const personSchema = {
       gtag("config", "G-9TSHXEV0C3");
     </script>
   </head>
-  <body class="flex flex-col min-h-screen max-w-prose mx-auto px-8 py-8 gap-8">
-    <header>
-      <nav class="flex flex-row gap-6 text-sm font-medium">
-        <a href="/" class="no-underline hover:underline">Home</a>
-        <a href="/cv" class="no-underline hover:underline">CV</a>
-        <a href="/blog" class="no-underline hover:underline">Blog</a>
-      </nav>
-    </header>
-    <main class="prose grow">
-      <slot />
-    </main>
-    <footer>
-      <div class="flex items-center gap-4">
-        {
-          socialLinks.map((link) => (
-            <a
-              href={link.href}
-              aria-label={link.label}
-              title={link.label}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={link.icon} alt={link.label} class="h-6 w-auto" />
-            </a>
-          ))
-        }
+  <body class="min-h-screen">
+    <div
+      class="flex flex-col md:flex-row gap-8 md:gap-12 max-w-5xl mx-auto w-full min-h-screen px-8 py-8"
+    >
+      <aside class="md:w-56 md:shrink-0">
+        <div
+          class="md:sticky md:top-8 flex flex-row md:flex-col items-center md:items-start gap-4"
+        >
+          <img
+            src="/assets/lior-shalev.png"
+            alt="Lior Shalev"
+            width="160"
+            height="160"
+            class="h-28 w-28 md:h-40 md:w-40 rounded-full object-cover border-2 border-gray-200"
+            loading="eager"
+          />
+          <div class="flex flex-col gap-3">
+            <div>
+              <a
+                href="/"
+                class="text-xl font-bold no-underline hover:underline"
+              >
+                Lior Shalev
+              </a>
+              <p class="text-sm text-gray-500">{jobTitle}</p>
+            </div>
+            <div class="flex items-center gap-4">
+              {
+                socialLinks.map((social) => (
+                  <a
+                    href={social.href}
+                    aria-label={social.label}
+                    title={social.label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src={social.icon}
+                      alt={social.label}
+                      class="h-6 w-auto"
+                    />
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="flex flex-col grow min-w-0">
+        <nav class="flex flex-row gap-6 text-sm font-medium mb-8">
+          {
+            navLinks.map((link) => {
+              const active =
+                cleanPath === link.href ||
+                (link.href !== "/" && cleanPath.startsWith(link.href));
+              return (
+                <a
+                  href={link.href}
+                  class={
+                    active
+                      ? "font-semibold underline"
+                      : "text-gray-600 no-underline hover:underline"
+                  }
+                >
+                  {link.label}
+                </a>
+              );
+            })
+          }
+        </nav>
+
+        <main class="prose grow">
+          <slot />
+        </main>
+
+        <footer
+          class="mt-12 pt-6 text-sm text-gray-500 flex justify-between items-center"
+        >
+          <span>&copy; {currentYear} Lior Shalev.</span>
+          <a href="/rss.xml" class="no-underline hover:underline">RSS</a>
+        </footer>
       </div>
-    </footer>
+    </div>
   </body>
 </html>

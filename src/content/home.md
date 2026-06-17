@@ -5,8 +5,6 @@ description: Software architect and hands-on systems engineer.
 
 # Lior Shalev
 
-<img src="/assets/lior-shalev.png" alt="Lior Shalev" width="120" />
-
 ## About me
 
 Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision. Most recently led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent.

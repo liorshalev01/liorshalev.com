@@ -1,13 +1,13 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import { formatDate } from "@/lib/date";
 import { getPosts } from "@/lib/blog";
+import { formatDate } from "@/lib/date";
 
 const posts = await getPosts();
 ---
 
 <Layout
-  title="Blog — Lior Shalev"
+  title="Lior Shalev - Blog"
   description="Notes on security engineering, low-level systems, and building things that have to keep working."
 >
   <h1>Blog</h1>
