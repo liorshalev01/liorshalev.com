@@ -1,0 +1,24 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getPosts } from "@/lib/blog";
+import { formatDate } from "@/lib/date";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = formatDate(post.data.publishDate);
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <h1>{post.data.title}</h1>
+  <p class="text-sm text-gray-500">
+    <time datetime={post.data.publishDate.toISOString()}>{formattedDate}</time>
+  </p>
+  <Content />
+</Layout>

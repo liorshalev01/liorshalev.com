@@ -1,5 +1,5 @@
 ---
-import "../styles/global.css";
+import "@/styles/global.css";
 
 interface Props {
   title: string;
@@ -12,18 +12,38 @@ const cleanPath = Astro.url.pathname.replace(/(?:index)?\.html$/, "");
 const canonical = new URL(cleanPath, Astro.site).href;
 const ogImage = new URL("/assets/lior-shalev.png", Astro.site).href;
 
+const jobTitle = "Software architect and hands-on systems engineer";
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/cv", label: "CV" },
+  { href: "/blog", label: "Blog" },
+];
+
+const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/liorshalev",
+    icon: "/assets/linkedin.png",
+  },
+  {
+    label: "GitHub",
+    href: "https://github.com/liorshalev01",
+    icon: "/assets/github.png",
+  },
+];
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Lior Shalev",
-  jobTitle: "Software architect and hands-on systems engineer",
+  jobTitle: jobTitle,
   url: "https://liorshalev.com",
   image: ogImage,
-  sameAs: [
-    "https://linkedin.com/in/liorshalev",
-    "https://github.com/liorshalev01",
-  ],
+  sameAs: socialLinks.map((link) => link.href),
 };
+
+const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -37,6 +57,12 @@ const personSchema = {
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Lior Shalev - Blog"
+      href="/rss.xml"
+    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -50,15 +76,17 @@ const personSchema = {
     {
       isHome && (
         <script
-          type="application/ld+json"
           is:inline
+          type="application/ld+json"
           set:html={JSON.stringify(personSchema)}
         />
       )
     }
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"
-    ></script>
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -69,6 +97,64 @@ const personSchema = {
     </script>
   </head>
   <body>
-    <slot />
+    <div class="flex flex-col gap-8 min-h-screen max-w-prose mx-auto px-8 py-8">
+      <header>
+        <nav class="flex flex-row gap-6 text-sm">
+          {
+            navLinks.map((link) => {
+              const active =
+                cleanPath === link.href ||
+                (link.href !== "/" && cleanPath.startsWith(link.href));
+              return (
+                <a
+                  href={link.href}
+                  class={
+                    active
+                      ? "font-semibold underline"
+                      : "text-gray-600 no-underline hover:underline"
+                  }
+                >
+                  {link.label}
+                </a>
+              );
+            })
+          }
+        </nav>
+      </header>
+
+      <main class="prose grow">
+        <slot />
+      </main>
+
+      <footer
+        class="flex justify-between items-center py-8 text-sm text-gray-500"
+      >
+        <span>&copy; {currentYear} Lior Shalev</span>
+        <div class="flex items-center gap-4">
+          {
+            socialLinks.map((social) => (
+              <a
+                href={social.href}
+                aria-label={social.label}
+                title={social.label}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={social.icon} alt={social.label} class="h-5 w-auto" />
+              </a>
+            ))
+          }
+          <a
+            href="/rss.xml"
+            aria-label="RSS Feed"
+            title="RSS Feed"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="/assets/rss.svg" alt="RSS Feed" class="h-5 w-auto" />
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
