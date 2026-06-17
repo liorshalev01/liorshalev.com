@@ -28,7 +28,7 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 ## Adding / Editing Pages
 
 - To add a page, create a new `src/content/<name>.md` with `title` and `description` frontmatter (both required — the build throws without them). Add a `slug` for a non-home path; omit it for the homepage.
-- Content is rendered inside `<article class="prose">`, so standard markdown styles automatically.
+- Content is rendered inside `<main class="prose">` (in `Layout.astro`), so standard markdown styles automatically.
 - To add a blog post, create `src/content/blog/<slug>.md` with `title`, `description`, and `publishDate` frontmatter. It appears at `/blog/<slug>` and in the `/blog` listing automatically. The visible post title is rendered from frontmatter `title` — don't add a body H1.
 
 ## Commands
