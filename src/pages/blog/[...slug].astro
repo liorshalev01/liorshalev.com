@@ -1,0 +1,27 @@
+---
+import { getCollection, render } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+}).format(post.data.publishDate);
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <article class="prose mx-auto px-8 py-8">
+    <p class="text-sm text-gray-500">
+      <time datetime={post.data.publishDate.toISOString()}>{formattedDate}</time>
+    </p>
+    <Content />
+  </article>
+</Layout>

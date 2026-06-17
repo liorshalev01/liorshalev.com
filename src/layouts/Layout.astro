@@ -50,15 +50,17 @@ const personSchema = {
     {
       isHome && (
         <script
-          type="application/ld+json"
           is:inline
+          type="application/ld+json"
           set:html={JSON.stringify(personSchema)}
         />
       )
     }
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"
-    ></script>
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"></script>
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -69,6 +71,13 @@ const personSchema = {
     </script>
   </head>
   <body>
+    <header class="prose mx-auto px-8 pt-8">
+      <nav class="flex gap-6 text-sm font-medium">
+        <a href="/" class="no-underline hover:underline">Home</a>
+        <a href="/cv" class="no-underline hover:underline">CV</a>
+        <a href="/blog" class="no-underline hover:underline">Blog</a>
+      </nav>
+    </header>
     <slot />
   </body>
 </html>

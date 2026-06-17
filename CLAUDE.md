@@ -11,8 +11,12 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 
 ## Key Files
 - `src/content/*.md`: Page content. Each file becomes a page. `home.md` (no `slug`) is the homepage; `lior-shalev-cv.md` (`slug: /cv`) is the CV.
-- `src/pages/[...slug].astro`: Single dynamic route that globs `src/content/*.md` and renders each into the layout.
-- `src/layouts/Layout.astro`: Shared HTML shell — `<head>` meta/OG/canonical tags, Person JSON-LD (homepage only), Google Analytics.
+- `src/pages/[...slug].astro`: Single dynamic route that globs `src/content/*.md` (non-recursive) and renders each into the layout.
+- `src/content.config.ts`: Defines the `blog` content collection (Zod schema: `title`, `description`, `publishDate`, optional `draft`).
+- `src/content/blog/*.md`: Blog posts (the `blog` collection). Separate from the page glob above.
+- `src/pages/blog/index.astro`: Blog listing (`/blog`), posts sorted newest-first, drafts excluded.
+- `src/pages/blog/[...slug].astro`: Individual post pages (`/blog/<slug>`), where `<slug>` is the post filename.
+- `src/layouts/Layout.astro`: Shared HTML shell — nav header (Home/CV/Blog), `<head>` meta/OG/canonical tags, Person JSON-LD (homepage only), Google Analytics.
 - `astro.config.mjs`: Site URL, `trailingSlash: "never"`, `build.format: "file"` (clean extensionless URLs), sitemap, external-link rehype plugin.
 - `public/`: Static assets served as-is (`CNAME`, `favicon.svg`, `robots.txt`, `assets/`).
 - `.github/workflows/deploy.yaml`: Builds and deploys to GitHub Pages on push to `main`.
@@ -20,6 +24,7 @@ Personal website and CV for Lior Shalev, served as a static site at [liorshalev.
 ## Adding / Editing Pages
 - To add a page, create a new `src/content/<name>.md` with `title` and `description` frontmatter (both required — the build throws without them). Add a `slug` for a non-home path; omit it for the homepage.
 - Content is rendered inside `<article class="prose">`, so standard markdown styles automatically.
+- To add a blog post, create `src/content/blog/<slug>.md` with `title`, `description`, and `publishDate` frontmatter (set `draft: true` to hide it from the build). It appears at `/blog/<slug>` and in the `/blog` listing automatically.
 
 ## Commands
 - `npm run dev`: Local dev server
