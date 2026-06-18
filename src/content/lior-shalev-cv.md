@@ -29,20 +29,20 @@ Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals
 
 Conceived and led a hardware-enforced endpoint-security system from concept to working prototype and provisional patent. The architecture isolates display and input in dedicated trusted hardware, so a compromised host relays only opaque ciphertext and never holds plaintext or keys, defeating key-loggers, screen-scraping, and man-in-the-browser attacks by design, not policy.
 
-**Project GitHub page →** https://github.com/liorshalev01/secure-endpoint
-
 #### Design & IP
 
 - **Synchronized ACK.** A three-party authenticated key-exchange protocol that lets physically isolated, unidirectional input and output devices converge on a single session key, solving the state-synchronization problem that arises when the two devices cannot communicate directly. Provisional patent.
 - **System whitepaper.** Threat model, three-node trust architecture, device provisioning/PKI, and the complete cryptographic protocol.
 - **Secure VDI.** A protocol bridge to a standard VDI backend.
 
-#### Working prototype
+#### Endpoint prototype
 
 - Hardware-enforced trusted display node on a Raspberry Pi 5: captures an untrusted host's HDMI output, decrypts locally (AES-256-GCM), and composites the plaintext as a trusted overlay, so the host never holds the key or plaintext.
 - Browser relay and cloud gateway: an untrusted React browser endpoint and a proxy handling secure-message crypto and content rendering.
 
 We decided to close the venture because we assessed the commercial opportunity as too narrow to justify continued full-time investment.
+
+**Project GitHub page →** https://github.com/liorshalev01/secure-endpoint
 
 ## Jan 2025 – Present: Software engineering consultant
 
