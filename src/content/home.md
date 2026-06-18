@@ -1,6 +1,6 @@
 ---
 title: Lior Shalev
-description: Software architect and hands-on systems engineer.
+description: Lior Shalev.
 ---
 
 # Lior Shalev

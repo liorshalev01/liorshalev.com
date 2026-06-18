@@ -1,7 +1,7 @@
 ---
 slug: /cv
 title: Lior Shalev - CV
-description: Software architect and hands-on systems engineer.
+description: Lior Shalev CV.
 ---
 
 # Lior Shalev
