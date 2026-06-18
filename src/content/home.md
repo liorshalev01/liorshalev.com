@@ -5,7 +5,7 @@ description: Software architect and hands-on systems engineer building products 
 
 # Lior Shalev
 
-<img src="/assets/lior-shalev.png" alt="Lior Shalev" width="120" />
+<img class="rounded border" src="/assets/lior-shalev.png" alt="Lior Shalev" width="140"/>
 
 ## About me
 
