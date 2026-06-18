@@ -6,6 +6,8 @@ description: Software architect and hands-on systems engineer building products 
 
 # Lior Shalev
 
+<button type="button" onclick="window.print()" class="print:hidden not-prose rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 no-underline hover:bg-gray-100">Save as PDF</button>
+
 Personal website: [liorshalev.com](https://liorshalev.com)<br>
 GitHub page: [github.com/liorshalev01](https://github.com/liorshalev01)<br>
 LinkedIn page: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)

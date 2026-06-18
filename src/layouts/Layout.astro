@@ -42,8 +42,6 @@ const personSchema = {
   image: ogImage,
   sameAs: socialLinks.map((link) => link.href),
 };
-
-const currentYear = new Date().getFullYear();
 ---
 
 <!doctype html>
@@ -98,7 +96,7 @@ const currentYear = new Date().getFullYear();
   </head>
   <body>
     <div class="flex flex-col gap-8 min-h-screen max-w-prose mx-auto px-8 py-8">
-      <header>
+      <header class="print:hidden">
         <nav class="flex flex-row gap-6 text-sm">
           {
             navLinks.map((link) => {
@@ -126,9 +124,7 @@ const currentYear = new Date().getFullYear();
         <slot />
       </main>
 
-      <footer
-        class="flex justify-between items-center py-8 text-sm text-gray-500"
-      >
+      <footer class="print:hidden flex flex-row items-center py-8">
         <div class="flex items-center gap-4">
           {
             socialLinks.map((social) => (
@@ -153,7 +149,6 @@ const currentYear = new Date().getFullYear();
             <img src="/assets/rss.svg" alt="RSS Feed" class="h-5 w-auto" />
           </a>
         </div>
-        <span>&copy; {currentYear} Lior Shalev</span>
       </footer>
     </div>
   </body>
