@@ -1,7 +1,7 @@
 ---
 slug: /cv
 title: Lior Shalev - CV
-description: Lior Shalev - CV.
+description: Lior Shalev CV.
 ---
 
 # Lior Shalev
