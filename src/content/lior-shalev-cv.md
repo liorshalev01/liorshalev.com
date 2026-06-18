@@ -35,7 +35,7 @@ Conceived and led a hardware-enforced endpoint-security system from concept to w
 - **System whitepaper.** Threat model, three-node trust architecture, device provisioning/PKI, and the complete cryptographic protocol.
 - **Secure VDI.** A protocol bridge to a standard VDI backend.
 
-#### Endpoint prototype
+#### Prototype
 
 - Hardware-enforced trusted display node on a Raspberry Pi 5: captures an untrusted host's HDMI output, decrypts locally (AES-256-GCM), and composites the plaintext as a trusted overlay, so the host never holds the key or plaintext.
 - Browser relay and cloud gateway: an untrusted React browser endpoint and a proxy handling secure-message crypto and content rendering.
