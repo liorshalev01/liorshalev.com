@@ -1,5 +1,6 @@
 ---
 import "@/styles/global.css";
+import ConsentBanner from "@/components/ConsentBanner.astro";
 
 interface Props {
   title: string;
@@ -82,19 +83,30 @@ const currentYear = new Date().getFullYear();
         />
       )
     }
-    <!-- Google tag (gtag.js) -->
-    <script
-      is:inline
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"></script>
+    <!-- Google tag (gtag.js) with Consent Mode v2 -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+      });
+      try {
+        if (localStorage.getItem("analytics-consent") === "granted") {
+          gtag("consent", "update", { analytics_storage: "granted" });
+        }
+      } catch (e) {}
       gtag("js", new Date());
       gtag("config", "G-9TSHXEV0C3");
     </script>
+    <script
+      is:inline
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"></script>
   </head>
   <body>
     <div class="flex flex-col gap-8 min-h-screen max-w-prose mx-auto px-8 py-8">
@@ -156,5 +168,7 @@ const currentYear = new Date().getFullYear();
         <span>&copy; {currentYear} Lior Shalev</span>
       </footer>
     </div>
+
+    <ConsentBanner />
   </body>
 </html>

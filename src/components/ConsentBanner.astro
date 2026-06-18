@@ -1,0 +1,61 @@
+<div
+  id="consent-banner"
+  hidden
+  class="fixed inset-x-0 bottom-0 z-50 border-t border-gray-200 bg-white/95 px-8 py-4 text-sm text-gray-600 backdrop-blur"
+>
+  <div
+    class="mx-auto flex max-w-prose flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+  >
+    <p class="m-0">
+      This site uses Google Analytics cookies to measure traffic.
+    </p>
+    <div class="flex shrink-0 gap-3">
+      <button
+        id="consent-decline"
+        type="button"
+        class="cursor-pointer rounded border border-gray-300 px-3 py-1 hover:bg-gray-100"
+      >
+        Decline
+      </button>
+      <button
+        id="consent-accept"
+        type="button"
+        class="cursor-pointer rounded bg-gray-900 px-3 py-1 text-white hover:bg-gray-700"
+      >
+        Accept
+      </button>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var banner = document.getElementById("consent-banner");
+    if (!banner) return;
+    function store(value) {
+      try {
+        localStorage.setItem("analytics-consent", value);
+      } catch (e) {}
+    }
+    var choice = null;
+    try {
+      choice = localStorage.getItem("analytics-consent");
+    } catch (e) {}
+    if (!choice) banner.hidden = false;
+    document
+      .getElementById("consent-accept")
+      .addEventListener("click", function () {
+        store("granted");
+        if (window.gtag) {
+          gtag("consent", "update", { analytics_storage: "granted" });
+        }
+        banner.hidden = true;
+      });
+    document
+      .getElementById("consent-decline")
+      .addEventListener("click", function () {
+        store("denied");
+        banner.hidden = true;
+      });
+  })();
+</script>
