@@ -80,19 +80,26 @@ const personSchema = {
         />
       )
     }
-    <!-- Google tag (gtag.js) -->
-    <script
-      is:inline
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-9TSHXEV0C3");
-    </script>
+    {
+      import.meta.env.PROD && (
+        <>
+          {/* Google tag (gtag.js) */}
+          <script
+            is:inline
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-9TSHXEV0C3"
+          />
+          <script is:inline>
+            {`window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-9TSHXEV0C3");`}
+          </script>
+        </>
+      )
+    }
   </head>
   <body>
     <div class="flex flex-col gap-8 min-h-screen max-w-prose mx-auto px-8 py-8">
