@@ -74,7 +74,7 @@ Counter-drone RF/Wi-Fi cybersecurity systems. Products deployed by defense and c
 
 ### Senior Software Developer
 
-Augmented-reality customer-support platform combining AI computer vision with WebRTC; deployed at telecom and consumer-electronics enterprises.
+Augmented-reality customer-support platform combining AI computer vision with WebRTC. Deployed at telecom and consumer-electronics enterprises.
 
 - Architected and developed the AR web client — browser-based image processing and AI inference integrated with WebRTC.
 - Architected and developed the AR Android and iOS apps — real-time object tracking AI on live video.
