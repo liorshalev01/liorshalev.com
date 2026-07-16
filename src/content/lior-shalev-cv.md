@@ -30,7 +30,7 @@ Freelance software engineer on security, embedded, and AR/computer-vision projec
 
 - Developed iOS ARKit camera-based spatial depth measurement.
 - Developed kernel DMA drivers for FPGA to user-space data paths on Xilinx SoC platforms.
-- Improved Windows/macOS EDR performance and stability, raised test coverage to 80%, resulting in zero production failures.
+- Improved Windows/macOS EDR performance and stability, resulting in zero production failures.
 
 ## Jan 2025 – Dec 2025: Stealth startup (founding team)
 
@@ -38,11 +38,10 @@ Freelance software engineer on security, embedded, and AR/computer-vision projec
 
 Conceived and led a hardware-enforced endpoint-security system from concept to working prototype. The architecture isolates display and input in dedicated trusted hardware, so a compromised host relays only opaque ciphertext and never holds plaintext or keys, defeating key-loggers, screen-scraping, and man-in-the-browser attacks by design, not policy.
 
-- **Synchronized ACK.** A three-party authenticated key-exchange protocol that lets physically isolated, unidirectional input and output devices converge on a single session key, solving the state-synchronization problem that arises when the two devices cannot communicate directly.
-- **System whitepaper.** Threat model, three-node trust architecture, device provisioning/PKI, and the complete cryptographic protocol.
-- **Secure VDI.** A protocol bridge to a standard VDI backend.
-- Trusted display node on a Raspberry Pi 5: captures an untrusted host's HDMI output, decrypts locally, and composites the plaintext as a trusted overlay, so the host never holds the key or plaintext.
-- Browser relay and cloud gateway: an untrusted React browser endpoint and a proxy handling secure-message encryption and content rendering.
+- Author of a three-party authenticated key-exchange protocol whitepaper. The protocol lets physically isolated, unidirectional input and output devices converge on a single session key, solving the state-synchronization problem that arises when the two devices cannot communicate directly.
+- Implemented the trusted display node prototype. Captures an untrusted host's HDMI output, decrypts locally, and composites the plaintext as a trusted overlay, so the host never holds the key or plaintext.
+- Implemented the browser endpoint secure content renderer.
+- Implemented the cloud gateway/proxy handling content encryption.
 
 We decided to close the venture because we assessed the commercial opportunity as too narrow to justify continued full-time investment.
 
@@ -66,7 +65,7 @@ Talon's Enterprise Browser, a Chromium-based secure browser for enterprise.
 
 Counter-drone RF/Wi-Fi cybersecurity systems. Products deployed by defense and critical-infrastructure customers globally.
 
-- Software architect and team lead for the Wi-Fi counter-drone cyber system.
+- Software architect and tech lead for the Wi-Fi counter-drone cyber system.
 - Developed the Linux Board Support Package for Xilinx platforms.
 - Led the RF system testing project — architecture, automation, regression coverage.
 - Led code-quality, DevOps, and release-management initiatives across engineering.
