@@ -9,15 +9,18 @@ description: Software engineer
 
 ## About me
 
-Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision.
+I’m a software developer with 20+ years of experience, building software where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision.
 
-Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
+Experienced from the kernel up, ranging from Linux drivers and embedded Linux to Chromium internals and applied cryptography, with shipped products across Windows, macOS, Linux, iOS, and Android.
 
-## Technical strengths
+Equally effective as a system architect and as the developer writing the code.
 
-- **Security engineering:** Endpoint security, Chromium/browser internals, DLP, RF/Wi-Fi cyber systems, applied cryptography and PKI, and security architecture for high-assurance products.
-- **Systems & low-level engineering:** Linux kernel/BSP, Xilinx/FPGA platforms, driver development, embedded Linux, and performance-critical C, C++20, and Rust.
-- **Computer vision, AR, and real-time media:** OpenCV, TensorFlow, ARKit, WebRTC, and real-time object tracking on live video.
-- **Cross-platform product delivery:** Production software across Windows, macOS, Linux, iOS, and Android; TypeScript/React, Python, Go, and AWS. Strong test, release, and DevOps ownership.
+## Skills
+
+- **Security:** Endpoint security, Chromium internals, DLP, RF and Wi‑Fi cyber systems, applied cryptography.
+- **Systems & low-level:** Linux kernel and BSP work, Xilinx and FPGA platforms, embedded Linux, and performance-critical systems.
+- **Computer vision:** OpenCV, OpenGL, TensorFlow, ARKit, WebRTC, and real-time video pipelines.
+- **Platforms:** Windows, macOS, Linux, browsers, iOS, and Android.
+- **Languages:** C++20, Rust, Go, Python, and TypeScript.
 
 [Read my full CV](/cv)
