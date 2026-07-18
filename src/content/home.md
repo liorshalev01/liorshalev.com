@@ -1,6 +1,6 @@
 ---
 title: Lior Shalev
-description: Software architect and hands-on systems engineer building products where failure is expensive.
+description: Software engineer
 ---
 
 # Lior Shalev
