@@ -21,7 +21,9 @@ Software engineer with 20+ years building systems: endpoint security, secure bro
 - **Platforms:** Windows, macOS, Linux, browsers, iOS, Android.
 - **Languages:** C++20, Rust, Go, Python, TypeScript.
 
-### Jan 2026 – Present — Freelance Software Engineer
+## Experience
+
+### Jan 2026 – Present: Freelance Software Engineer
 
 Production reliability, low-level systems, and cross-platform performance.
 
@@ -29,7 +31,7 @@ Production reliability, low-level systems, and cross-platform performance.
 - Developed kernel DMA drivers for FPGA-to-user-space data paths on Xilinx SoC platforms.
 - Developed a camera-based spatial depth measurement feature for iOS.
 
-## Jan 2025 – Dec 2025: Stealth startup (founding team)
+### Jan 2025 – Dec 2025: Stealth startup (founding team)
 
 **Founding Software Developer**. Conceived and led a hardware-enforced endpoint security system from concept to working prototype. The architecture isolates display and input in dedicated trusted hardware, so a compromised host or browser can relay only opaque ciphertext and never access plaintext or keys, defeating keylogging, screen scraping, and man-in-the-browser attacks by design rather than by policy.
 
@@ -41,7 +43,7 @@ We decided to close the venture after concluding that the commercial opportunity
 
 _Rust, TypeScript, Node.js, React, V4L2, OpenCV, OpenGL, AES, PKI._
 
-### Jan 2023 – Apr 2024 — Talon (acquired by Palo Alto Networks)
+### Jan 2023 – Apr 2024: Talon (acquired by Palo Alto Networks)
 
 **Senior Software Developer** — Talon Enterprise Browser, a Chromium-based secure browser.
 
@@ -51,7 +53,7 @@ _Rust, TypeScript, Node.js, React, V4L2, OpenCV, OpenGL, AES, PKI._
 
 _C++20, TypeScript, Python, Chromium internals._
 
-### Dec 2019 – Dec 2022 — D-Fend Solutions (acquired by Motorola Solutions)
+### Dec 2019 – Dec 2022: D-Fend Solutions (acquired by Motorola Solutions)
 
 **Senior Software Developer** — Counter-drone RF and Wi-Fi cybersecurity systems, deployed globally by defense and critical-infrastructure customers.
 
@@ -62,7 +64,7 @@ _C++20, TypeScript, Python, Chromium internals._
 
 _Python, C, C++, Linux._
 
-### Jan 2018 – Dec 2019 — TechSee
+### Jan 2018 – Dec 2019: TechSee
 
 **Senior Software Developer** — Augmented reality customer support platform combining AI computer vision with WebRTC.
 
@@ -71,7 +73,7 @@ _Python, C, C++, Linux._
 
 _C++, Swift, Java, Python, TypeScript, React, iOS, Android._
 
-## Earlier
+### Earlier
 
 - **2013–2015 — HealthWatch, Software Development Lead.** 15-lead ECG remote monitoring and medical diagnostic product. Led hardware/firmware integration, mobile apps, and cloud backend. _C, C++, iOS, Android, AWS._
 - **2008–2012 — Independent Consultant (US), E-commerce and Online Trading.** Built large-scale trading and e-commerce services handling high concurrent request volumes. _C#, .NET, AWS._

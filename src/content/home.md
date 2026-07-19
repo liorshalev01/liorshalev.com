@@ -1,6 +1,6 @@
 ---
 title: Lior Shalev
-description: Software engineer
+description: Senior Software Engineer, Hands-on Tech Lead.
 ---
 
 # Lior Shalev
