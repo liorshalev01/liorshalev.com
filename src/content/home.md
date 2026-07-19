@@ -1,6 +1,6 @@
 ---
 title: Lior Shalev
-description: Software architect and hands-on systems engineer building products where failure is expensive.
+description: Senior Software Engineer, Hands-on Tech Lead.
 ---
 
 # Lior Shalev
@@ -9,15 +9,14 @@ description: Software architect and hands-on systems engineer building products 
 
 ## About me
 
-Software architect and hands-on systems engineer building products where failure is expensive: endpoint security, secure browsers, counter-drone defense, and real-time computer vision.
+Software engineer with 20+ years building systems: endpoint security, secure browsers, counter-drone defense, and real-time computer vision. Effective from the kernel up, from Linux drivers and embedded Linux to Chromium internals and applied cryptography, with shipped products across Windows, macOS, Linux, iOS, and Android. I write the code and can own the architecture. I am looking for a senior individual-contributor or hands-on technical-lead role.
 
-Experience from the kernel up: Linux drivers, embedded Linux, Chromium internals, and cryptographic protocols, with shipped products on Windows, macOS, Linux, iOS, and Android. Equally effective as the architect of a system and as the engineer writing its code.
+## Skills
 
-## Technical strengths
-
-- **Security engineering:** Endpoint security, Chromium/browser internals, DLP, RF/Wi-Fi cyber systems, applied cryptography and PKI, and security architecture for high-assurance products.
-- **Systems & low-level engineering:** Linux kernel/BSP, Xilinx/FPGA platforms, driver development, embedded Linux, and performance-critical C, C++20, and Rust.
-- **Computer vision, AR, and real-time media:** OpenCV, TensorFlow, ARKit, WebRTC, and real-time object tracking on live video.
-- **Cross-platform product delivery:** Production software across Windows, macOS, Linux, iOS, and Android; TypeScript/React, Python, Go, and AWS. Strong test, release, and DevOps ownership.
+- **Security:** Endpoint security, Chromium internals, DLP, RF and Wi-Fi cyber systems, applied cryptography.
+- **Systems & low-level:** Linux kernel and BSP work, Xilinx and FPGA platforms, embedded Linux, performance-critical systems.
+- **Computer vision:** OpenCV, OpenGL, TensorFlow, ARKit, WebRTC, real-time video pipelines.
+- **Platforms:** Windows, macOS, Linux, browsers, iOS, Android.
+- **Languages:** C++20, Rust, Go, Python, TypeScript.
 
 [Read my full CV](/cv)
