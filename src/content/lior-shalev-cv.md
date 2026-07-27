@@ -29,7 +29,6 @@ Production reliability, low-level systems, and cross-platform performance.
 
 - Refactored Windows and macOS EDR integrations for performance and stability, resulting in a near-zero rate of production failures.
 - Developed kernel DMA drivers for FPGA-to-user-space data paths on Xilinx SoC platforms.
-- Developed a camera-based spatial depth measurement feature for iOS.
 
 ### Jan 2025 – Dec 2025: Stealth startup (founding team)
 
