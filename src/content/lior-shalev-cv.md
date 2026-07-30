@@ -6,6 +6,8 @@ description: Senior Software Engineer, Hands-on Tech Lead.
 
 # Lior Shalev
 
+Mobile: +972 54 4200052<br>
+Email: <liorshalev01@gmail.com><br>
 Personal: [liorshalev.com](https://liorshalev.com)<br>
 LinkedIn: [linkedin.com/in/liorshalev](https://linkedin.com/in/liorshalev)
 
