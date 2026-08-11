@@ -19,6 +19,7 @@ There is no test suite or linter. The build itself is the safety net: `getStatic
 - **Astro** (static site generation), TypeScript in `astro/tsconfigs/strictest` mode.
 - **Tailwind CSS v4** (utilities) + `@tailwindcss/typography` (`prose`). The only CSS is the two imports in `src/styles/global.css`; all layout is Tailwind utility classes in `Layout.astro`. Default system fonts, no animations.
 - **Content**: Markdown with YAML frontmatter.
+- **Diagrams**: `astro-mermaid` transforms \`\`\`mermaid fenced code blocks into `<pre class="mermaid">` and renders them client-side (only on pages that contain one, via the `mermaid` npm package). Configured in `astro.config.mjs`.
 - **Hosting**: GitHub Pages, custom domain via `public/CNAME`. `.github/workflows/deploy.yaml` builds and deploys on push to `main`.
 
 ## Architecture

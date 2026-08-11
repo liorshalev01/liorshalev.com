@@ -3,6 +3,7 @@ import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import mermaid from "astro-mermaid";
 import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
@@ -10,7 +11,7 @@ export default defineConfig({
   site: "https://liorshalev.com",
   trailingSlash: "never",
   build: { format: "file" },
-  integrations: [sitemap()],
+  integrations: [mermaid({ theme: "neutral" }), sitemap()],
   markdown: {
     processor: unified({
       rehypePlugins: [
