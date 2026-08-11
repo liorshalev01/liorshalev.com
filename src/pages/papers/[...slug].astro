@@ -1,0 +1,21 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import { getPapers } from "@/lib/papers";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const papers = await getPapers();
+  return papers.map((paper) => ({
+    params: { slug: paper.id },
+    props: { paper },
+  }));
+}
+
+const { paper } = Astro.props;
+const { Content } = await render(paper);
+---
+
+<Layout title={paper.data.title} description={paper.data.description}>
+  <h1>{paper.data.title}</h1>
+  <Content />
+</Layout>
