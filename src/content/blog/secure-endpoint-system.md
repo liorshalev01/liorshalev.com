@@ -42,4 +42,6 @@ The Synchronized ACK protocol resolves this by having the cloud gateway prove, i
 
 Most endpoint security tries to make a compromised computer trustworthy again. This architecture takes the opposite position: it assumes the computer is already lost and ensures that the session's security never rested on the computer to begin with. By moving the trusted I/O path off the host and anchoring trust in dedicated hardware, the host's compromise stops being relevant to the security of the session.
 
-[Read the full paper](/papers/secure-endpoint-system)
+## Further reading
+
+For the full specification — protocol message formats, the step-by-step Synchronized ACK handshake, certificate and trust model, and a worked VDI use case — see [the full paper](/papers/secure-endpoint-system).
